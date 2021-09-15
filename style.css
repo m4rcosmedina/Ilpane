@@ -1,0 +1,161 @@
+.cuerpo {
+  background-color: b9935a;
+}
+
+.navbar {
+  font-size: large;
+  font-family: Helvetica, sans-serif;
+  color: black;
+
+
+
+}
+
+.contacto {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+/* cards */
+
+
+
+.contenedor {
+
+  display: flex;
+  justify-content: center;
+  
+}
+
+.contenedor figure {
+  position: relative;
+  height: 250px;
+  cursor: pointer;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.contenedor figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.contenedor figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(146, 87, 19, 0.4);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedor figure:hover>.capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedor figure:hover>.capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.contenedor figure:hover>img {
+  transform: scale(1.3);
+}
+
+.contenedor figure .capa h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+  margin-top: 30px;
+}
+
+.contenedor figure .capa p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+
+
+/* portada */
+.article {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: var(--space-md);
+}
+
+
+
+body {
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 8rem;
+
+  font-family: "Palatino", serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.section-wrap {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  padding-inline-start: var(--space-md);
+  padding-inline-end: var(--space-md);
+  max-inline-size: 1200px;
+}
+
+.header {
+  margin-block-end: var(--space-lg);
+  padding-block-start: var(--space-sm);
+  padding-block-end: var(--space-sm);
+  background: #fc02d2;
+  font-size: 1rem;
+}
+
+.principal {
+  margin-block-start: var(--space-lg);
+  margin-block-end: var(--space-lg);
+}
+
+.contenido {
+  margin-block-start: var(--space-sm);
+}
+
+.principal_titulo {
+  font-weight: bold;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.image-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  inline-size: 100%;
+  border-radius: 1rem;
+}
+
+.image-wrap img {
+  position: absolute;
+  object-fit: cover;
+  inline-size: 100%;
+
+}
+
