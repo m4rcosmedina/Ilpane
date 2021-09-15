@@ -1,12 +1,12 @@
-.cuerpo {
-  background-color: b9935a;
+body {
+  background-color:#FFF;
 }
 
 .navbar {
   font-size: large;
   font-family: Helvetica, sans-serif;
   color: black;
-
+  background-color:#fff;
 
 
 }
